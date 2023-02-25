@@ -14,7 +14,5 @@ def cut_cylinder(pts, p0, r0):
     return interior, boundary
 
 def cut_cube(pts, p0, alpha, beta):
-    alpha = kw['alpha']
-    beta = kw['beta']
     return 'table this'
 
