@@ -25,7 +25,9 @@ def plot_voxel_data(pdata, point_size=15, cmap="coolwarm"):
     p.show()
 
 if( __name__ == "__main__" ):
-    pdata = extract_data('unv_files/housing_40k.unv')
+    res = 40 if len(sys.argv) == 1 else int(sys.argv[1])
+    pdata = extract_data('unv_files/housing_%dk.unv'%res)
+    print('PLOTTING DATA')
     plot_voxel_data(pdata, point_size=15, cmap="coolwarm")
 
 
